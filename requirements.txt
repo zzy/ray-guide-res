@@ -1,5 +1,6 @@
 ray
 pandas
-pytorch
+torch
+torchvision
 tensorflow
 
