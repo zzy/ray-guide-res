@@ -1,3 +1,3 @@
 # rayexamples
 
-Example use case for Ray book - https://bitbucket.org/Ouds/raybookfiles.
+Example use case for Ray book - http://ray.book.budshome.com
