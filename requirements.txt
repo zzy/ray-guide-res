@@ -11,3 +11,4 @@ bokeh
 ipywidgets==6.0.0
 keras
 cython==0.29.0
+psutil
