@@ -1,4 +1,4 @@
-ray[debug]
+ray
 jupyter
 modin
 pandas
