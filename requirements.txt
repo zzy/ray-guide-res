@@ -15,3 +15,7 @@ psutil
 aiomysql
 jieba
 setproctitle
+xlrd
+xlwt
+
+
