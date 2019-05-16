@@ -13,6 +13,7 @@ keras
 cython==0.29.0
 psutil
 aiomysql
+sqlalchemy
 jieba
 setproctitle
 xlrd
