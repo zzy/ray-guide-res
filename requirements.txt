@@ -18,5 +18,5 @@ jieba
 setproctitle
 xlrd
 xlwt
-
+gensim
 
