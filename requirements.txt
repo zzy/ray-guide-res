@@ -1,6 +1,5 @@
-ray
-jupyter
-modin
+# ray # ray[debug]
+modin # modin[dask]
 pandas
 torch
 tensorflow
@@ -19,4 +18,6 @@ setproctitle
 xlrd
 xlwt
 gensim
+jupyter
+jupytext
 
