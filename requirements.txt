@@ -1,5 +1,5 @@
 # ray # ray[debug]
-modin # modin[dask]
+git+https://github.com/modin-project/modin # modin # modin[dask]
 pandas
 torch
 tensorflow
