@@ -3,7 +3,7 @@ git+https://github.com/modin-project/modin # modin # modin[dask]
 pandas
 torch
 tensorflow
-gym
+gym[atari]
 scipy
 opencv-python
 bokeh
