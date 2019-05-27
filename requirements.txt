@@ -20,4 +20,4 @@ xlwt
 gensim
 jupyter
 jupytext
-
+pysnooper
