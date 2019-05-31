@@ -143,7 +143,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <a class="header" href="#linux和wsl环境准备" id="linux和wsl环境准备"><h1>Linux和WSL环境准备</h1></a>
+                        <a class="header" href="#linux和wsl环境" id="linux和wsl环境"><h1>Linux和WSL环境</h1></a>
 
                     </main>
 
@@ -182,21 +182,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3001");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload(true); // force reload from server (not from cache)
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         
