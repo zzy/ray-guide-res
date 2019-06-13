@@ -153,7 +153,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <a class="header" href="#ray最佳实践指南" id="ray最佳实践指南"><h1>Ray最佳实践指南</h1></a>
+                        <h1><a class="header" href="#ray最佳实践指南" id="ray最佳实践指南">Ray最佳实践指南</a></h1>
 <p>The Hitchhiker’s Guide to Ray</p>
 <hr />
 <p>您好！欢迎来到《Ray最佳实践指南》。</p>
@@ -162,60 +162,62 @@
 <blockquote>
 <p>使用 Python 3 是<em>高度</em> 优先于 Python 2。如果您发现自己 仍然 在生产环境中使用 Python 2，请考虑升级您的应用程序和基础设施。如果您正在使用 Python 3，恭喜您 —— 您确实有很好的品味。 ——Kenneth Reitz</p>
 </blockquote>
-<a class="header" href="#致谢" id="致谢"><h2>致谢</h2></a>
+<h2><a class="header" href="#致谢" id="致谢">致谢</a></h2>
 <p>感谢妻子的支持，以及可爱的女儿对我心情的调节。</p>
 <p>感谢Ray项目团队的无私奉献。</p>
-<a class="header" href="#授权" id="授权"><h2>授权</h2></a>
+<h2><a class="header" href="#授权" id="授权">授权</a></h2>
 <p>欢迎转载、引用。</p>
 <p>转载、引用请注明出处。</p>
 <p>作者保留本书和本书相关的所有权利。</p>
-<a class="header" href="#作者自序" id="作者自序"><h1>作者自序</h1></a>
-<a class="header" href="#ray是什么" id="ray是什么"><h2>ray是什么？</h2></a>
+<h1><a class="header" href="#作者自序" id="作者自序">作者自序</a></h1>
+<h2><a class="header" href="#ray是什么" id="ray是什么">ray是什么？</a></h2>
 <p>Ray是为机器学习、深度学习而开发的高可用、高性能的分布式框架。该框架旨在让基于Python的机器学习和深度学习工作负载能够实时执行，并具有类似消息传递接口(MPI)的性能和细粒度。</p>
 <p>Ray与其他分布式系统（如Spark）的相比，在深度学习领域具有很大的优势。因为目前的很多流行分布式系统都不是以构建 AI 应用为目标设计的，缺乏人工智能应用的相应支持与 API。而Ray 与 TensorFlow、PyTorch 和 MXNet 等深度学习框架互相兼容，项目应用中，在 Ray 中可以使用一个或多个深度学习框架。</p>
 <p>本书中，基于Ray分布式系统：运用Pandas进行数据分析，运用TensorFlow和PyTorch等框架进行深度学习算法方面的实战。</p>
 <p>本书中使用Python、Scala，以及Java进行例程的开发，因此读者需要具备Python、Scala、Java中任意一种语言的基础编程技能。</p>
-<a class="header" href="#背景和必要性" id="背景和必要性"><h2>背景和必要性</h2></a>
+<h2><a class="header" href="#背景和必要性" id="背景和必要性">背景和必要性</a></h2>
 <p>目前比较流行的分布式计算引擎Spark等都不是以构建 AI 应用为目标设计的，缺乏人工智能应用的相应支持与API。</p>
 <p>而Ray不同，Ray以构建AI应用为设计目标。同时Ray 与 TensorFlow、PyTorch 和 MXNet等深度学习框架互相兼容，项目应用中，在Ray中可以使用一个或多个深度学习框架。</p>
 <!-- ## 作者简介
-<p>张忠宇，现居成都。电子邮箱：linshi@budshome.com；微信：cd-zzy；QQ：9809920。</p>
-<p>17年以上政府、教育、电信、交通等行业大型信息化项目架构分析、开发管理经验。现主要从事大数据项目和机器学习项目的架构分析、开发管理、教学指导，以及技术顾问工作。 --&gt;</p>
-<a class="header" href="#第1章-数据分析和机器学习" id="第1章-数据分析和机器学习"><h1>第1章 数据分析和机器学习</h1></a>
-<a class="header" href="#摘要" id="摘要"><h2>摘要</h2></a>
-<a class="header" href="#数据分析" id="数据分析"><h1>数据分析</h1></a>
-<a class="header" href="#云计算" id="云计算"><h2>云计算</h2></a>
-<a class="header" href="#大数据" id="大数据"><h2>大数据</h2></a>
-<a class="header" href="#机器学习" id="机器学习"><h1>机器学习</h1></a>
-<a class="header" href="#深度学习" id="深度学习"><h2>深度学习</h2></a>
-<a class="header" href="#增强学习" id="增强学习"><h2>增强学习</h2></a>
-<a class="header" href="#ray环境部署" id="ray环境部署"><h1>Ray环境部署</h1></a>
-<a class="header" href="#摘要-1" id="摘要-1"><h2>摘要</h2></a>
-<a class="header" href="#linux和wsl环境" id="linux和wsl环境"><h1>Linux和WSL环境</h1></a>
-<a class="header" href="#ray的组件和特性" id="ray的组件和特性"><h1>Ray的组件和特性</h1></a>
-<a class="header" href="#ray-tune超参数优化框架" id="ray-tune超参数优化框架"><h1>Ray Tune：超参数优化框架</h1></a>
-<a class="header" href="#ray-rllib可自由扩展的增强学习" id="ray-rllib可自由扩展的增强学习"><h1>Ray RLlib：可自由扩展的增强学习</h1></a>
-<a class="header" href="#ray的安装和优化" id="ray的安装和优化"><h1>Ray的安装和优化</h1></a>
-<a class="header" href="#从pypi安装ray" id="从pypi安装ray"><h1>从PyPI安装Ray</h1></a>
-<a class="header" href="#ray的源码编译安装" id="ray的源码编译安装"><h1>Ray的源码编译安装</h1></a>
-<a class="header" href="#ray的依赖" id="ray的依赖"><h2>Ray的依赖</h2></a>
-<a class="header" href="#从源码安装ray" id="从源码安装ray"><h2>从源码安装Ray</h2></a>
-<a class="header" href="#安装测试" id="安装测试"><h2>安装测试</h2></a>
-<a class="header" href="#执行清理" id="执行清理"><h2>执行清理</h2></a>
-<a class="header" href="#docker中安装ray" id="docker中安装ray"><h1>Docker中安装Ray</h1></a>
-<a class="header" href="#docker安装" id="docker安装"><h2>Docker安装</h2></a>
-<a class="header" href="#编写dockerfile" id="编写dockerfile"><h2>编写Dockerfile</h2></a>
-<a class="header" href="#编译docker镜像及ray源码" id="编译docker镜像及ray源码"><h2>编译Docker镜像及Ray源码</h2></a>
-<a class="header" href="#启动和运行ray的docker容器" id="启动和运行ray的docker容器"><h2>启动和运行Ray的Docker容器</h2></a>
-<a class="header" href="#测试ray的dcoker容器" id="测试ray的dcoker容器"><h2>测试Ray的Dcoker容器</h2></a>
-<a class="header" href="#实例运行" id="实例运行"><h2>实例运行</h2></a>
-<a class="header" href="#超参数优化示例" id="超参数优化示例"><h3>超参数优化示例</h3></a>
-<a class="header" href="#l-bfgs" id="l-bfgs"><h3>L-BFGS</h3></a>
-<a class="header" href="#play-pong" id="play-pong"><h3>Play Pong</h3></a>
-<a class="header" href="#安装问题收集" id="安装问题收集"><h1>安装问题收集</h1></a>
-<a class="header" href="#ray安装问题" id="ray安装问题"><h2>Ray安装问题</h2></a>
-<a class="header" href="#ray运行问题" id="ray运行问题"><h2>Ray运行问题</h2></a>
-<a class="header" href="#第3章-ray入门" id="第3章-ray入门"><h1><strong>第3章 Ray入门</strong></h1></a>
+
+张忠宇，现居成都。电子邮箱：linshi@budshome.com；微信：cd-zzy；QQ：9809920。
+
+17年以上政府、教育、电信、交通等行业大型信息化项目架构分析、开发管理经验。现主要从事大数据项目和机器学习项目的架构分析、开发管理、教学指导，以及技术顾问工作。 -->
+<h1><a class="header" href="#第1章-数据分析和机器学习" id="第1章-数据分析和机器学习">第1章 数据分析和机器学习</a></h1>
+<h2><a class="header" href="#摘要" id="摘要">摘要</a></h2>
+<h1><a class="header" href="#数据分析" id="数据分析">数据分析</a></h1>
+<h2><a class="header" href="#云计算" id="云计算">云计算</a></h2>
+<h2><a class="header" href="#大数据" id="大数据">大数据</a></h2>
+<h1><a class="header" href="#机器学习" id="机器学习">机器学习</a></h1>
+<h2><a class="header" href="#深度学习" id="深度学习">深度学习</a></h2>
+<h2><a class="header" href="#增强学习" id="增强学习">增强学习</a></h2>
+<h1><a class="header" href="#ray环境部署" id="ray环境部署">Ray环境部署</a></h1>
+<h2><a class="header" href="#摘要-1" id="摘要-1">摘要</a></h2>
+<h1><a class="header" href="#linux和wsl环境" id="linux和wsl环境">Linux和WSL环境</a></h1>
+<h1><a class="header" href="#ray的组件和特性" id="ray的组件和特性">Ray的组件和特性</a></h1>
+<h1><a class="header" href="#ray-tune超参数优化框架" id="ray-tune超参数优化框架">Ray Tune：超参数优化框架</a></h1>
+<h1><a class="header" href="#ray-rllib可自由扩展的增强学习" id="ray-rllib可自由扩展的增强学习">Ray RLlib：可自由扩展的增强学习</a></h1>
+<h1><a class="header" href="#ray的安装和优化" id="ray的安装和优化">Ray的安装和优化</a></h1>
+<h1><a class="header" href="#从pypi安装ray" id="从pypi安装ray">从PyPI安装Ray</a></h1>
+<h1><a class="header" href="#ray的源码编译安装" id="ray的源码编译安装">Ray的源码编译安装</a></h1>
+<h2><a class="header" href="#ray的依赖" id="ray的依赖">Ray的依赖</a></h2>
+<h2><a class="header" href="#从源码安装ray" id="从源码安装ray">从源码安装Ray</a></h2>
+<h2><a class="header" href="#安装测试" id="安装测试">安装测试</a></h2>
+<h2><a class="header" href="#执行清理" id="执行清理">执行清理</a></h2>
+<h1><a class="header" href="#docker中安装ray" id="docker中安装ray">Docker中安装Ray</a></h1>
+<h2><a class="header" href="#docker安装" id="docker安装">Docker安装</a></h2>
+<h2><a class="header" href="#编写dockerfile" id="编写dockerfile">编写Dockerfile</a></h2>
+<h2><a class="header" href="#编译docker镜像及ray源码" id="编译docker镜像及ray源码">编译Docker镜像及Ray源码</a></h2>
+<h2><a class="header" href="#启动和运行ray的docker容器" id="启动和运行ray的docker容器">启动和运行Ray的Docker容器</a></h2>
+<h2><a class="header" href="#测试ray的dcoker容器" id="测试ray的dcoker容器">测试Ray的Dcoker容器</a></h2>
+<h2><a class="header" href="#实例运行" id="实例运行">实例运行</a></h2>
+<h3><a class="header" href="#超参数优化示例" id="超参数优化示例">超参数优化示例</a></h3>
+<h3><a class="header" href="#l-bfgs" id="l-bfgs">L-BFGS</a></h3>
+<h3><a class="header" href="#play-pong" id="play-pong">Play Pong</a></h3>
+<h1><a class="header" href="#安装问题收集" id="安装问题收集">安装问题收集</a></h1>
+<h2><a class="header" href="#ray安装问题" id="ray安装问题">Ray安装问题</a></h2>
+<h2><a class="header" href="#ray运行问题" id="ray运行问题">Ray运行问题</a></h2>
+<h1><a class="header" href="#第3章-ray入门" id="第3章-ray入门"><strong>第3章 Ray入门</strong></a></h1>
 <ol>
 <li>Ray概览</li>
 </ol>
@@ -232,7 +234,7 @@
 <li>小结</li>
 </ol>
 <hr />
-<a class="header" href="#第4章-actorsdataflow模型扩展" id="第4章-actorsdataflow模型扩展"><h1><strong>第4章 Actors—DataFlow模型扩展</strong></h1></a>
+<h1><a class="header" href="#第4章-actorsdataflow模型扩展" id="第4章-actorsdataflow模型扩展"><strong>第4章 Actors—DataFlow模型扩展</strong></a></h1>
 <ol>
 <li>Ray概览</li>
 </ol>
@@ -261,7 +263,7 @@
 <li>小结</li>
 </ol>
 <hr />
-<a class="header" href="#第5章-ray和gpus的整合使用" id="第5章-ray和gpus的整合使用"><h1><strong>第5章 Ray和GPUs的整合使用</strong></h1></a>
+<h1><a class="header" href="#第5章-ray和gpus的整合使用" id="第5章-ray和gpus的整合使用"><strong>第5章 Ray和GPUs的整合使用</strong></a></h1>
 <ol>
 <li>概述</li>
 </ol>
@@ -286,7 +288,7 @@
 <li>小结</li>
 </ol>
 <hr />
-<a class="header" href="#第6章-ray-web-ui" id="第6章-ray-web-ui"><h1><strong>第6章 Ray Web UI</strong></h1></a>
+<h1><a class="header" href="#第6章-ray-web-ui" id="第6章-ray-web-ui"><strong>第6章 Ray Web UI</strong></a></h1>
 <ol>
 <li>概述</li>
 </ol>
@@ -316,7 +318,7 @@
 <li>小结</li>
 </ol>
 <hr />
-<a class="header" href="#第7章-ray-tune超参数优化框架" id="第7章-ray-tune超参数优化框架"><h1><strong>第7章 Ray Tune：超参数优化框架</strong></h1></a>
+<h1><a class="header" href="#第7章-ray-tune超参数优化框架" id="第7章-ray-tune超参数优化框架"><strong>第7章 Ray Tune：超参数优化框架</strong></a></h1>
 <ol>
 <li>概述</li>
 </ol>
@@ -369,7 +371,7 @@
 <li>小结</li>
 </ol>
 <hr />
-<a class="header" href="#第8章-ray-tune高阶" id="第8章-ray-tune高阶"><h1><strong>第8章 Ray Tune高阶</strong></h1></a>
+<h1><a class="header" href="#第8章-ray-tune高阶" id="第8章-ray-tune高阶"><strong>第8章 Ray Tune高阶</strong></a></h1>
 <ol>
 <li>概述</li>
 </ol>
@@ -396,7 +398,7 @@ population-based-training</p>
 <li>小结</li>
 </ol>
 <hr />
-<a class="header" href="#第9章-rllib可自由扩展的增强学习" id="第9章-rllib可自由扩展的增强学习"><h1><strong>第9章 RLlib：可自由扩展的增强学习</strong></h1></a>
+<h1><a class="header" href="#第9章-rllib可自由扩展的增强学习" id="第9章-rllib可自由扩展的增强学习"><strong>第9章 RLlib：可自由扩展的增强学习</strong></a></h1>
 <ol>
 <li>概述</li>
 </ol>
@@ -439,7 +441,7 @@ models-preprocessors.md</p>
 <li>小结</li>
 </ol>
 <hr />
-<a class="header" href="#第10章-在ray中使用tensorflow" id="第10章-在ray中使用tensorflow"><h1><strong>第10章 在Ray中使用TensorFlow</strong></h1></a>
+<h1><a class="header" href="#第10章-在ray中使用tensorflow" id="第10章-在ray中使用tensorflow"><strong>第10章 在Ray中使用TensorFlow</strong></a></h1>
 <ol>
 <li>概述</li>
 </ol>
@@ -460,7 +462,7 @@ models-preprocessors.md</p>
 <li>小结</li>
 </ol>
 <hr />
-<a class="header" href="#第11章-在ray中使用pytorch" id="第11章-在ray中使用pytorch"><h1><strong>第11章 在Ray中使用PyTorch</strong></h1></a>
+<h1><a class="header" href="#第11章-在ray中使用pytorch" id="第11章-在ray中使用pytorch"><strong>第11章 在Ray中使用PyTorch</strong></a></h1>
 <ol>
 <li>概述</li>
 </ol>
@@ -477,7 +479,7 @@ models-preprocessors.md</p>
 <li>小结</li>
 </ol>
 <hr />
-<a class="header" href="#第12章-ray之上的pandas高效数据处理" id="第12章-ray之上的pandas高效数据处理"><h1><strong>第12章 Ray之上的Pandas—高效数据处理</strong></h1></a>
+<h1><a class="header" href="#第12章-ray之上的pandas高效数据处理" id="第12章-ray之上的pandas高效数据处理"><strong>第12章 Ray之上的Pandas—高效数据处理</strong></a></h1>
 <ol>
 <li>概述</li>
 </ol>
@@ -494,7 +496,7 @@ models-preprocessors.md</p>
 <li>小结</li>
 </ol>
 <hr />
-<a class="header" href="#第13章-ray实例应用" id="第13章-ray实例应用"><h1><strong>第13章 Ray实例应用</strong></h1></a>
+<h1><a class="header" href="#第13章-ray实例应用" id="第13章-ray实例应用"><strong>第13章 Ray实例应用</strong></a></h1>
 <ol>
 <li>概述</li>
 </ol>
@@ -539,7 +541,7 @@ models-preprocessors.md</p>
 <li>小结</li>
 </ol>
 <hr />
-<a class="header" href="#第14章-ray的架构设计" id="第14章-ray的架构设计"><h1><strong>第14章 Ray的架构设计</strong></h1></a>
+<h1><a class="header" href="#第14章-ray的架构设计" id="第14章-ray的架构设计"><strong>第14章 Ray的架构设计</strong></a></h1>
 <ol>
 <li>内构件概览</li>
 </ol>
@@ -570,7 +572,7 @@ fault-tolerance.md</p>
 <li>小结</li>
 </ol>
 <hr />
-<a class="header" href="#第15章-ray的集群使用" id="第15章-ray的集群使用"><h1><strong>第15章 Ray的集群使用</strong></h1></a>
+<h1><a class="header" href="#第15章-ray的集群使用" id="第15章-ray的集群使用"><strong>第15章 Ray的集群使用</strong></a></h1>
 <ol>
 <li>概述</li>
 </ol>
@@ -595,7 +597,7 @@ fault-tolerance.md</p>
 <li>小结</li>
 </ol>
 <hr />
-<a class="header" href="#附录" id="附录"><h1>附录</h1></a>
+<h1><a class="header" href="#附录" id="附录">附录</a></h1>
 <ol>
 <li>问题汇总和解决</li>
 </ol>
